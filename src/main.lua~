@@ -1,6 +1,0 @@
-Gamestate = require "hump.gamestate"
-Class = require "hump.class"
-
-function love.load()
-
-end
