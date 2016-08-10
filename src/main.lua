@@ -1,5 +1,6 @@
 Gamestate = require "hump.gamestate"
 Class = require "hump.class"
+vector = require "hump.vector"
 
 function love.load()
 	print("test")
@@ -9,7 +10,9 @@ function love.load()
 		print(name)
 		_, _, name = name:find("(.*)%..*")
 		print(name)
-		states[name] = require("states."..name)
+		if name then
+			states[name] = require("states."..name)
+		end
 	end
 
 	Gamestate.registerEvents()
