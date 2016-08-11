@@ -3,7 +3,7 @@ local game = {}
 Character = Class{}
 
 function Character:init(pos)
-
+	
 end
 
 function game:init()
@@ -18,7 +18,7 @@ function game:draw()
 	love.graphics.setColor(255,255,255)
 	
 	for i = 1,4 do
-		love.graphics.draw(default_icon, 100 + (i* 45), 300)
+		love.graphics.draw(default_icon, 100 + (i * 128), 300, 0, 4)
 	end
 end
 
