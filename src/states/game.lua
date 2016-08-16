@@ -8,7 +8,7 @@ end
 
 function game:init()
 	love.graphics.setDefaultFilter("nearest", "nearest")
-	default_icon = love.graphics.newImage("img/default_icon.png")
+	default_icon = love.graphics.newImage("img/firebolt_icon.png")
 end
 
 function game:draw()
